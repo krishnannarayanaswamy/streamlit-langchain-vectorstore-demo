@@ -1,0 +1,34 @@
+numeric:
+- name: product_id
+  no_index: false
+  sortable: false
+- name: price
+  no_index: false
+  sortable: false
+text:
+- name: product_name
+  no_index: false
+  no_stem: false
+  sortable: false
+  weight: 1
+  withsuffixtrie: false
+- name: description
+  no_index: false
+  no_stem: false
+  sortable: false
+  weight: 1
+  withsuffixtrie: false
+- name: content
+  no_index: false
+  no_stem: false
+  sortable: false
+  weight: 1
+  withsuffixtrie: false
+vector:
+- algorithm: FLAT
+  block_size: 1000
+  datatype: FLOAT32
+  dims: 1536
+  distance_metric: COSINE
+  initial_cap: 20000
+  name: content_vector

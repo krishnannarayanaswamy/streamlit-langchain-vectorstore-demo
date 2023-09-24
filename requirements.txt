@@ -1,0 +1,10 @@
+langchain
+cassio>=0.1.0
+streamlit
+unstructured
+unstructured[pdf]
+openai
+redis
+pgvector
+nomic
+tiktoken
