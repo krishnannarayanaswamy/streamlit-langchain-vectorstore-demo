@@ -1,3 +1,8 @@
+Chatbot
+
+![alt text](https://github.com/krishnannarayanaswamy/streamlit-langchain-vectorstore-demo/blob/main/img/chatbot.png?raw=true)
+
+
 Redis
 
     Create a REDIS cluster in docker - https://redis.io/docs/getting-started/install-stack/docker/
@@ -31,6 +36,4 @@ Mongo
     streamlit run mongo-app.py
 
 
-    app
-
-    ![alt text](https://github.com/krishnannarayanaswamy/streamlit-langchain-vectorstore-demo/blob/main/img/chatbot.png?raw=true)
+   
