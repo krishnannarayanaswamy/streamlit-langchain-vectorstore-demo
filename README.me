@@ -1,0 +1,31 @@
+Redis
+
+    Create a REDIS cluster in docker - https://redis.io/docs/getting-started/install-stack/docker/
+    Create a .env file with open ai key
+    pip3 install -r requirements.txt
+    python3 redis-load.py
+    streamlit run redis-app.py
+    
+
+Mongo
+
+    Create a Mongo DB Atlas cluster at https://www.mongodb.com/
+    Create a database and provide a collection name
+    Create an index as below
+            {
+            "mappings": {
+                "dynamic": true,
+                "fields": {
+                "embedding": {
+                    "dimensions": 1536,
+                    "similarity": "cosine",
+                    "type": "knnVector"
+                }
+                }
+            }
+        }
+    Create a .env file with open ai key
+    pip3 install -r requirements.txt
+    Modify mongo-app.py and mongo-load.py with your credentials, URL and database, colelction and index names
+    python3 mongo-load.py
+    streamlit run mongo-app.py
